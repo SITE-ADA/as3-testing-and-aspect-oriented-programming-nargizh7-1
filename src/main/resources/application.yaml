@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ResfulDemo
+
+  datasource:
+    url: jdbc:h2:mem:restDB
+    database: restDB
+    username: sa
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
