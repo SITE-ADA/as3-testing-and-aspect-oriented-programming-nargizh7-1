@@ -1,11 +1,11 @@
-package az.edu.ada.wm2.springbootsecurityframeworkdemo.model.dto;
+package az.edu.ada.wm2.resfuldemo.model.dto;
 
-import az.edu.ada.wm2.springbootsecurityframeworkdemo.model.entity.Movie;
-import lombok.Data;
+import az.edu.ada.wm2.resfuldemo.model.entity.Movie;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import jakarta.validation.constraints.Min;
+import lombok.Data;
 
 @Data
 public class MovieDto {
@@ -23,15 +23,6 @@ public class MovieDto {
     @NotNull(message = "Number of wins must not be null")
     @Min(value = 0, message = "Number of wins cannot be negative")
     private Integer wins;
-
-    public Movie toMovie() {
-        Movie movie = new Movie();
-        movie.setId(this.id);
-        movie.setName(this.name);
-        movie.setCountry(this.country);
-        movie.setWins(this.wins);
-        return movie;
-    }
 
     public static MovieDto fromMovie(Movie movie) {
         MovieDto dto = new MovieDto();

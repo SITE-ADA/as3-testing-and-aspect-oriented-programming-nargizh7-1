@@ -1,8 +1,8 @@
-package az.edu.ada.wm2.springbootsecurityframeworkdemo.service;
+package az.edu.ada.wm2.resfuldemo.service;
 
-import az.edu.ada.wm2.springbootsecurityframeworkdemo.model.dto.MovieDto;
-import az.edu.ada.wm2.springbootsecurityframeworkdemo.model.entity.Movie;
-import az.edu.ada.wm2.springbootsecurityframeworkdemo.repo.MovieRepository;
+import az.edu.ada.wm2.resfuldemo.model.dto.MovieDto;
+import az.edu.ada.wm2.resfuldemo.model.entity.Movie;
+import az.edu.ada.wm2.resfuldemo.repo.MovieRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

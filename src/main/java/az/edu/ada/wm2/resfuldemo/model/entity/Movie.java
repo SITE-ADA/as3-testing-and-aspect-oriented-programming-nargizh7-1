@@ -1,7 +1,10 @@
-package az.edu.ada.wm2.springbootsecurityframeworkdemo.model.entity;
+package az.edu.ada.wm2.resfuldemo.model.entity;
 
-import lombok.*;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
 @AllArgsConstructor

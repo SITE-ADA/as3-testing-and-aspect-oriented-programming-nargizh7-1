@@ -18,5 +18,8 @@ public interface ProductMapper {
 
     List<ProductDto> productListToProductDtoList(List<Product> products);
 
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "modifiedAt", ignore = true)
+    @Mapping(target = "pricePerItem", source = "price")
     Product productDtoToProduct(ProductDto productDto);
 }

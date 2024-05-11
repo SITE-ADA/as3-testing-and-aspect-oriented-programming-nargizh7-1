@@ -1,9 +1,9 @@
-package az.edu.ada.wm2.springbootsecurityframeworkdemo.repo;
+package az.edu.ada.wm2.resfuldemo.repo;
 
+import az.edu.ada.wm2.resfuldemo.model.entity.Movie;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
-import az.edu.ada.wm2.springbootsecurityframeworkdemo.model.entity.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -11,3 +11,18 @@ spring:
     console:
       enabled: true
       path: /h2
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG

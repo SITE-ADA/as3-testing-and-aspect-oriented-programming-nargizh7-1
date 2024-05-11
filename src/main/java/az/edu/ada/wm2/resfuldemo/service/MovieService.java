@@ -1,6 +1,6 @@
-package az.edu.ada.wm2.springbootsecurityframeworkdemo.service;
+package az.edu.ada.wm2.resfuldemo.service;
 
-import az.edu.ada.wm2.springbootsecurityframeworkdemo.model.dto.MovieDto;
+import az.edu.ada.wm2.resfuldemo.model.dto.MovieDto;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
