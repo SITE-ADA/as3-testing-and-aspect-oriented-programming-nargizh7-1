@@ -7,7 +7,7 @@ Dear students, <br />
 In this assignment, you are required to create a very simple RESTful application using Spring similar to the previous
 Assignment 2. (One entity and CRUD operations on that entity is enough - use GET, POST, DELETE,  PUT, PATCH methods). 
 
-<h4> Task related: (20%)</h4>
+<h4> DONE Task related: (20%)</h4>
 <ul>
     <li> Create a CRUD for a single entity</li>
     <li> Perform a validation for data entry in create and update</li>
@@ -15,7 +15,7 @@ Assignment 2. (One entity and CRUD operations on that entity is enough - use GET
     <li> Perform dynamic and automatic mapping using MapStruct instead of manual mapping</li>
 </ul>
 
-<h4> Task related: (20%)</h4>
+<h4> PROBLEM Task related: (20%)</h4>
 <ul>
     <li> Write unit tests to test methods of Service class(es). Try to design test scenarios as rich as possible</li>
     <li> Write some integration tests for Controller methods</li>
