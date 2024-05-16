@@ -22,7 +22,10 @@ spring:
     defer-datasource-initialization: true
 
 logging:
+  file:
+    path: C:\Users\nargi\OneDrive\Documents\web2\resfuldemo
+    name: file.log
   level:
     org:
       springframework:
-        web: DEBUG
+        web: INFO
