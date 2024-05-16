@@ -21,7 +21,7 @@ Assignment 2. (One entity and CRUD operations on that entity is enough - use GET
     <li> Write some integration tests for Controller methods</li>
 </ul>
 
-<h4> Task related: (20%)</h4>
+<h4> DONE Task related: (20%)</h4>
 <ul>
     <li> Log a message before each method is called in the Service class(es) with the information about the input parameters</li>
     <li> Log a message after each method is executed in the Service class(es) with the information about the return value</li>
