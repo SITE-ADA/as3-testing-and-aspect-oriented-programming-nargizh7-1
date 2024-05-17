@@ -28,7 +28,7 @@ Assignment 2. (One entity and CRUD operations on that entity is enough - use GET
     <li> Log a message after each method is executed in the Service class(es) with the information about the execution time</li>
 </ul>
 
-<h4> Task related: (30%)</h4>
+<h4> WORKING ON IT, NOT COMMITING YET Task related: (30%)</h4>
 <ul>
     <li> Develop another app which will use the endpoints exposed by the first app listening to different port. </li>
     <li> Develop endpoints on the new app to send requests to the former one and redirect the responses back to the user. </li>
