@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: ResfulDemo
+
+  datasource:
+    url: jdbc:h2:mem:restDB
+    database: restDB
+    username: sa
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+logging:
+  file:
+    path: C:\Users\nargi\OneDrive\Documents\web2\resfuldemo
+    name: file.log
+  level:
+    org:
+      springframework:
+        web: INFO
