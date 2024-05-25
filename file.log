@@ -1,70 +1,352 @@
-2024-05-16T06:32:01.009+04:00  INFO 3156 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 3156 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
-2024-05-16T06:32:01.014+04:00  INFO 3156 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2024-05-16T06:32:02.451+04:00  INFO 3156 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-16T06:32:02.587+04:00  INFO 3156 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 2 JPA repository interfaces.
-2024-05-16T06:32:04.174+04:00  INFO 3156 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-16T06:32:04.387+04:00  INFO 3156 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-16T06:32:04.486+04:00  INFO 3156 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-16T06:32:05.176+04:00  INFO 3156 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-16T06:32:05.245+04:00  INFO 3156 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-16T06:32:05.508+04:00  INFO 3156 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
-2024-05-16T06:32:05.512+04:00  INFO 3156 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-16T06:32:05.560+04:00  WARN 3156 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
-2024-05-16T06:32:06.864+04:00  INFO 3156 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-16T06:32:06.909+04:00  INFO 3156 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-16T06:32:07.628+04:00  INFO 3156 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-05-16T06:32:08.975+04:00  WARN 3156 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-16T06:32:09.065+04:00  INFO 3156 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-05-16T06:32:10.350+04:00  INFO 3156 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 9.925 seconds (process running for 12.628)
-2024-05-16T06:34:41.170+04:00  INFO 3156 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-05-16T06:34:41.179+04:00  INFO 3156 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-05-16T06:34:41.200+04:00  INFO 3156 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-05-16T06:34:52.315+04:00  INFO 9192 --- [ResfulDemo] [main] a.e.a.w.r.ResfulDemoApplication          : Starting ResfulDemoApplication using Java 17.0.10 with PID 9192 (C:\Users\nargi\OneDrive\Documents\web2\resfuldemo\build\classes\java\main started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
-2024-05-16T06:34:52.317+04:00  INFO 9192 --- [ResfulDemo] [main] a.e.a.w.r.ResfulDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2024-05-16T06:34:52.827+04:00  INFO 9192 --- [ResfulDemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-16T06:34:52.893+04:00  INFO 9192 --- [ResfulDemo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
-2024-05-16T06:34:53.436+04:00  INFO 9192 --- [ResfulDemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-16T06:34:53.448+04:00  INFO 9192 --- [ResfulDemo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-16T06:34:53.449+04:00  INFO 9192 --- [ResfulDemo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-16T06:34:53.508+04:00  INFO 9192 --- [ResfulDemo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-16T06:34:53.508+04:00  INFO 9192 --- [ResfulDemo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1149 ms
-2024-05-16T06:34:53.638+04:00  INFO 9192 --- [ResfulDemo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-16T06:34:53.672+04:00  INFO 9192 --- [ResfulDemo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-16T06:34:53.697+04:00  INFO 9192 --- [ResfulDemo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-16T06:34:53.885+04:00  INFO 9192 --- [ResfulDemo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-16T06:34:53.903+04:00  INFO 9192 --- [ResfulDemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-16T06:34:54.000+04:00  INFO 9192 --- [ResfulDemo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
-2024-05-16T06:34:54.001+04:00  INFO 9192 --- [ResfulDemo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-05-16T06:34:54.026+04:00  WARN 9192 --- [ResfulDemo] [main] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
-2024-05-16T06:34:54.778+04:00  INFO 9192 --- [ResfulDemo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-16T06:34:54.805+04:00  INFO 9192 --- [ResfulDemo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-16T06:34:55.070+04:00  INFO 9192 --- [ResfulDemo] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-05-16T06:34:55.443+04:00  WARN 9192 --- [ResfulDemo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-16T06:34:55.474+04:00  INFO 9192 --- [ResfulDemo] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-05-16T06:34:55.869+04:00  INFO 9192 --- [ResfulDemo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-16T06:34:55.877+04:00  INFO 9192 --- [ResfulDemo] [main] a.e.a.w.r.ResfulDemoApplication          : Started ResfulDemoApplication in 3.907 seconds (process running for 4.141)
-2024-05-16T06:34:56.476+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-16T06:34:56.476+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-16T06:34:56.477+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-05-16T06:35:06.212+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-6] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method save with arguments [MovieDto(id=null, name=kk, country=kk, wins=9)]
-2024-05-16T06:35:06.214+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-6] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method save executed
-2024-05-16T06:35:06.234+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-4] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method listDto with arguments [1, name, asc, , ]
-2024-05-16T06:35:06.328+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-4] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method listDto executed
-2024-05-16T06:35:07.487+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-7] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method getDtoById with arguments [3]
-2024-05-16T06:35:07.499+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-7] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method getDtoById executed
-2024-05-16T06:35:11.837+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-9] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method save with arguments [MovieDto(id=3, name=Django Unchained, country=U, wins=2)]
-2024-05-16T06:35:11.853+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-9] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method save executed
-2024-05-16T06:35:11.861+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-10] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method listDto with arguments [1, name, asc, , ]
-2024-05-16T06:35:11.864+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-10] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method listDto executed
-2024-05-16T06:35:13.145+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-2] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method deleteById with arguments [3]
-2024-05-16T06:35:13.158+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-2] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method deleteById executed
-2024-05-16T06:35:13.163+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-3] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method listDto with arguments [1, name, asc, , ]
-2024-05-16T06:35:13.165+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-3] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method listDto executed
-2024-05-16T06:35:14.138+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-1] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method deleteById with arguments [2]
-2024-05-16T06:35:14.141+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-1] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method deleteById executed
-2024-05-16T06:35:14.151+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-6] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method listDto with arguments [1, name, asc, , ]
-2024-05-16T06:35:14.154+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-6] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method listDto executed
-2024-05-16T06:35:15.351+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-4] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method deleteById with arguments [4]
-2024-05-16T06:35:15.354+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-4] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method deleteById executed
-2024-05-16T06:35:15.364+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-7] a.e.a.w.r.aspect.ServiceLoggingAspect    : Calling method listDto with arguments [1, name, asc, , ]
-2024-05-16T06:35:15.366+04:00  INFO 9192 --- [ResfulDemo] [http-nio-8080-exec-7] a.e.a.w.r.aspect.ServiceLoggingAspect    : Method listDto executed
+2024-05-25T02:00:45.477+04:00  INFO 3972 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Starting MovieControllerTest using Java 17.0.10 with PID 3972 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T02:00:45.503+04:00  INFO 3972 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T02:00:49.245+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T02:00:50.792+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-25T02:00:50.795+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T02:00:50.804+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2024-05-25T02:00:50.952+04:00  INFO 3972 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Started MovieControllerTest in 6.126 seconds (process running for 8.842)
+2024-05-25T02:00:54.159+04:00  INFO 3972 --- [ResfulDemo] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests]: ResfulDemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-25T02:00:54.173+04:00  INFO 3972 --- [ResfulDemo] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration az.edu.ada.wm2.resfuldemo.ResfulDemoApplication for test class az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests
+2024-05-25T02:00:54.314+04:00  INFO 3972 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 3972 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T02:00:54.316+04:00  INFO 3972 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T02:00:56.413+04:00  INFO 3972 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T02:00:56.727+04:00  INFO 3972 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 2 JPA repository interfaces.
+2024-05-25T02:00:58.531+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T02:00:58.947+04:00  INFO 3972 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T02:00:59.126+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T02:00:59.505+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T02:00:59.612+04:00  INFO 3972 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T02:01:00.077+04:00  INFO 3972 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T02:01:00.096+04:00  INFO 3972 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T02:01:00.186+04:00  WARN 3972 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T02:01:02.253+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T02:01:02.336+04:00  INFO 3972 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T02:01:03.470+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T02:01:06.174+04:00  WARN 3972 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T02:01:06.319+04:00  INFO 3972 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T02:01:07.711+04:00  INFO 3972 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 13.507 seconds (process running for 25.606)
+2024-05-25T02:03:38.110+04:00  INFO 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T02:03:38.112+04:00  WARN 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T02:03:38.113+04:00 ERROR 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T02:03:38.116+04:00  WARN 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T02:03:38.116+04:00 ERROR 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T02:03:38.116+04:00  WARN 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]] [n/a]
+2024-05-25T02:03:38.117+04:00  INFO 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T02:03:38.121+04:00  INFO 3972 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T11:26:32.499+04:00  INFO 25424 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Starting MovieControllerTest using Java 17.0.10 with PID 25424 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T11:26:32.503+04:00  INFO 25424 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T11:26:34.379+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T11:26:35.505+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:26:35.505+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:26:35.510+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:26:35.626+04:00  INFO 25424 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Started MovieControllerTest in 4.135 seconds (process running for 9.517)
+2024-05-25T11:26:35.711+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:26:35.711+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:26:35.711+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:26:35.968+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:26:35.971+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:26:35.971+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:26:36.015+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:26:36.018+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:26:36.021+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-05-25T11:26:36.067+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:26:36.070+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:26:36.071+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:26:36.083+04:00  INFO 25424 --- [ResfulDemo] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests]: ResfulDemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-25T11:26:36.098+04:00  INFO 25424 --- [ResfulDemo] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration az.edu.ada.wm2.resfuldemo.ResfulDemoApplication for test class az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests
+2024-05-25T11:26:36.164+04:00  INFO 25424 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 25424 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T11:26:36.164+04:00  INFO 25424 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T11:26:36.801+04:00  INFO 25424 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T11:26:36.905+04:00  INFO 25424 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 2 JPA repository interfaces.
+2024-05-25T11:26:37.810+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T11:26:38.021+04:00  INFO 25424 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T11:26:38.132+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T11:26:38.551+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T11:26:38.615+04:00  INFO 25424 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T11:26:39.045+04:00  INFO 25424 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T11:26:39.051+04:00  INFO 25424 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T11:26:39.142+04:00  WARN 25424 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T11:26:40.540+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T11:26:40.614+04:00  INFO 25424 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T11:26:41.755+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T11:26:44.333+04:00  WARN 25424 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T11:26:44.452+04:00  INFO 25424 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T11:26:45.695+04:00  INFO 25424 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 9.582 seconds (process running for 19.584)
+2024-05-25T11:28:00.272+04:00  INFO 21752 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Starting MovieControllerTest using Java 17.0.10 with PID 21752 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T11:28:00.272+04:00  INFO 21752 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T11:28:01.815+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T11:28:02.411+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:28:02.411+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:28:02.411+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:28:02.483+04:00  INFO 21752 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Started MovieControllerTest in 2.973 seconds (process running for 7.154)
+2024-05-25T11:28:02.621+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:28:02.621+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:28:02.621+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:28:02.777+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:28:02.777+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:28:02.777+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:28:02.820+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:28:02.821+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:28:02.821+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:28:02.873+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T11:28:02.875+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T11:28:02.875+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T11:28:02.913+04:00  INFO 21752 --- [ResfulDemo] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests]: ResfulDemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-25T11:28:02.913+04:00  INFO 21752 --- [ResfulDemo] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration az.edu.ada.wm2.resfuldemo.ResfulDemoApplication for test class az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests
+2024-05-25T11:28:02.976+04:00  INFO 21752 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 21752 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T11:28:02.981+04:00  INFO 21752 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T11:28:03.593+04:00  INFO 21752 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T11:28:03.691+04:00  INFO 21752 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
+2024-05-25T11:28:04.403+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T11:28:04.532+04:00  INFO 21752 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T11:28:04.614+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T11:28:04.945+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T11:28:05.018+04:00  INFO 21752 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T11:28:05.343+04:00  INFO 21752 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T11:28:05.350+04:00  INFO 21752 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T11:28:05.416+04:00  WARN 21752 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T11:28:06.763+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T11:28:06.811+04:00  INFO 21752 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T11:28:07.944+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T11:28:09.618+04:00  WARN 21752 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T11:28:09.723+04:00  INFO 21752 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T11:28:10.566+04:00  INFO 21752 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 7.633 seconds (process running for 15.236)
+2024-05-25T11:30:41.195+04:00  INFO 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T11:30:41.224+04:00  WARN 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T11:30:41.224+04:00 ERROR 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T11:30:41.224+04:00  WARN 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T11:30:41.224+04:00 ERROR 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T11:30:41.224+04:00  WARN 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]] [n/a]
+2024-05-25T11:30:41.227+04:00  INFO 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T11:30:41.232+04:00  INFO 21752 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T11:41:35.156+04:00  INFO 4704 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 4704 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T11:41:35.166+04:00  INFO 4704 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T11:41:36.540+04:00  INFO 4704 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T11:41:36.855+04:00  INFO 4704 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 270 ms. Found 2 JPA repository interfaces.
+2024-05-25T11:41:39.278+04:00  INFO 4704 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T11:41:39.526+04:00  INFO 4704 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T11:41:39.688+04:00  INFO 4704 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T11:41:40.136+04:00  INFO 4704 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T11:41:40.241+04:00  INFO 4704 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T11:41:40.718+04:00  INFO 4704 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T11:41:40.725+04:00  INFO 4704 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T11:41:40.838+04:00  WARN 4704 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T11:41:42.196+04:00  INFO 4704 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T11:41:42.276+04:00  INFO 4704 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T11:41:43.226+04:00  INFO 4704 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T11:41:45.213+04:00  WARN 4704 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T11:41:45.279+04:00  INFO 4704 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T11:41:46.368+04:00  INFO 4704 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 12.441 seconds (process running for 19.829)
+2024-05-25T11:44:16.737+04:00  INFO 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T11:44:16.743+04:00  WARN 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T11:44:16.743+04:00 ERROR 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T11:44:16.746+04:00  WARN 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T11:44:16.747+04:00 ERROR 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T11:44:16.748+04:00  WARN 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]] [n/a]
+2024-05-25T11:44:16.748+04:00  INFO 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T11:44:16.761+04:00  INFO 4704 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T11:50:41.830+04:00  INFO 16664 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 16664 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T11:50:41.839+04:00  INFO 16664 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T11:50:43.589+04:00  INFO 16664 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T11:50:43.811+04:00  INFO 16664 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 187 ms. Found 2 JPA repository interfaces.
+2024-05-25T11:50:45.788+04:00  INFO 16664 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T11:50:46.177+04:00  INFO 16664 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T11:50:46.392+04:00  INFO 16664 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T11:50:46.909+04:00  INFO 16664 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T11:50:47.040+04:00  INFO 16664 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T11:50:47.653+04:00  INFO 16664 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T11:50:47.657+04:00  INFO 16664 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T11:50:47.766+04:00  WARN 16664 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T11:50:49.448+04:00  INFO 16664 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T11:50:49.506+04:00  INFO 16664 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T11:50:50.356+04:00  INFO 16664 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T11:50:52.227+04:00  WARN 16664 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T11:50:52.344+04:00  INFO 16664 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T11:50:54.000+04:00  INFO 16664 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 13.195 seconds (process running for 21.071)
+2024-05-25T11:53:24.500+04:00  INFO 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T11:53:24.508+04:00  WARN 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T11:53:24.508+04:00 ERROR 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T11:53:24.518+04:00  WARN 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T11:53:24.518+04:00 ERROR 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T11:53:24.519+04:00  WARN 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]] [n/a]
+2024-05-25T11:53:24.519+04:00  INFO 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T11:53:24.548+04:00  INFO 16664 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T12:02:15.380+04:00  INFO 23132 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Starting MovieControllerTest using Java 17.0.10 with PID 23132 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T12:02:15.383+04:00  INFO 23132 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T12:02:18.274+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T12:02:19.711+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:02:19.716+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:02:19.725+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2024-05-25T12:02:19.873+04:00  INFO 23132 --- [ResfulDemo] [Test worker] a.e.a.w.resfuldemo.MovieControllerTest   : Started MovieControllerTest in 5.25 seconds (process running for 9.896)
+2024-05-25T12:02:20.049+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:02:20.049+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:02:20.049+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T12:02:20.284+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:02:20.284+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:02:20.284+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T12:02:20.555+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:02:20.555+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:02:20.555+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T12:02:20.607+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:02:20.607+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:02:20.607+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T12:02:20.648+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:02:20.648+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:02:20.648+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T12:02:20.688+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:02:20.688+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:02:20.688+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T12:02:21.099+04:00  INFO 23132 --- [ResfulDemo] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests]: ResfulDemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-25T12:02:21.099+04:00  INFO 23132 --- [ResfulDemo] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration az.edu.ada.wm2.resfuldemo.ResfulDemoApplication for test class az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests
+2024-05-25T12:02:21.172+04:00  INFO 23132 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 23132 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T12:02:21.172+04:00  INFO 23132 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T12:02:21.987+04:00  INFO 23132 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T12:02:22.140+04:00  INFO 23132 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 2 JPA repository interfaces.
+2024-05-25T12:02:23.421+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T12:02:23.624+04:00  INFO 23132 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T12:02:23.721+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T12:02:23.937+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T12:02:23.977+04:00  INFO 23132 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T12:02:24.186+04:00  INFO 23132 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T12:02:24.186+04:00  INFO 23132 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T12:02:24.235+04:00  WARN 23132 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T12:02:25.370+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T12:02:25.437+04:00  INFO 23132 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T12:02:26.287+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T12:02:27.808+04:00  WARN 23132 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T12:02:27.865+04:00  INFO 23132 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T12:02:28.684+04:00  INFO 23132 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 7.568 seconds (process running for 18.702)
+2024-05-25T12:07:30.105+04:00  INFO 14968 --- [ResfulDemo] [Test worker] a.e.a.w.r.MovieControllerIntegrationTest : Starting MovieControllerIntegrationTest using Java 17.0.10 with PID 14968 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T12:07:30.116+04:00  INFO 14968 --- [ResfulDemo] [Test worker] a.e.a.w.r.MovieControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T12:07:35.185+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T12:07:36.255+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-25T12:07:36.255+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-25T12:07:36.255+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-05-25T12:07:36.329+04:00  INFO 14968 --- [ResfulDemo] [Test worker] a.e.a.w.r.MovieControllerIntegrationTest : Started MovieControllerIntegrationTest in 7.115 seconds (process running for 10.08)
+2024-05-25T12:07:37.665+04:00  WARN 14968 --- [ResfulDemo] [Test worker] o.s.test.context.TestContextManager      : Caught exception while invoking 'afterTestMethod' callback on TestExecutionListener [org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener] for test method [void az.edu.ada.wm2.resfuldemo.MovieControllerIntegrationTest.testGetIndexPage() throws java.lang.Exception] and test instance [az.edu.ada.wm2.resfuldemo.MovieControllerIntegrationTest@1b841e7d]
+
+org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+
+-> at az.edu.ada.wm2.resfuldemo.MovieControllerIntegrationTest.testGetIndexPage(MovieControllerTest.java:42)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(any());
+    verify(mock).someMethod(contains("foo"))
+
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:86) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.resetMocks(ResetMocksTestExecutionListener.java:73) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener.afterTestMethod(ResetMocksTestExecutionListener.java:67) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:487) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.afterEach(SpringExtension.java:278) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterEachCallbacks$12(TestMethodTestDescriptor.java:261) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:277) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.commons.util.CollectionUtils.forEachInReverseOrder(CollectionUtils.java:217) ~[junit-platform-commons-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:276) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterEachCallbacks(TestMethodTestDescriptor.java:260) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:145) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+
+2024-05-25T12:07:38.697+04:00  INFO 14968 --- [ResfulDemo] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests]: ResfulDemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-05-25T12:07:38.704+04:00  INFO 14968 --- [ResfulDemo] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration az.edu.ada.wm2.resfuldemo.ResfulDemoApplication for test class az.edu.ada.wm2.resfuldemo.ResfulDemoApplicationTests
+2024-05-25T12:07:38.846+04:00  INFO 14968 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 14968 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo)
+2024-05-25T12:07:38.846+04:00  INFO 14968 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T12:07:40.405+04:00  INFO 14968 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T12:07:40.619+04:00  INFO 14968 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 2 JPA repository interfaces.
+2024-05-25T12:07:42.703+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T12:07:43.169+04:00  INFO 14968 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T12:07:43.388+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T12:07:43.985+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T12:07:44.196+04:00  INFO 14968 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T12:07:45.305+04:00  INFO 14968 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T12:07:45.317+04:00  INFO 14968 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T12:07:45.564+04:00  WARN 14968 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T12:07:48.082+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T12:07:48.170+04:00  INFO 14968 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T12:07:49.658+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T12:07:51.908+04:00  WARN 14968 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T12:07:51.975+04:00  INFO 14968 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T12:07:53.025+04:00  INFO 14968 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 14.298 seconds (process running for 26.777)
+2024-05-25T12:10:23.535+04:00  INFO 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T12:10:23.536+04:00  WARN 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T12:10:23.536+04:00 ERROR 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T12:10:23.542+04:00  WARN 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2024-05-25T12:10:23.542+04:00 ERROR 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-05-25T12:10:23.543+04:00  WARN 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]] [n/a]
+2024-05-25T12:10:23.544+04:00  INFO 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T12:10:23.553+04:00  INFO 14968 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

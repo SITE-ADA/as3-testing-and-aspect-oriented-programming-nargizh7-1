@@ -5,96 +5,149 @@ import az.edu.ada.wm2.resfuldemo.model.dto.MovieDto;
 import az.edu.ada.wm2.resfuldemo.service.MovieService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.web.servlet.MockMvc;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.springframework.data.domain.Page;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.util.List;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.mockito.Mockito.*;
 
-@WebMvcTest(MovieController.class)
-class MovieControllerTest {
+class MovieControllerIntegrationTest {
 
-    @Autowired
-    private MockMvc mockMvc;
-
-    @MockBean
+    @Mock
     private MovieService movieService;
 
-    private MovieDto movieDto;
+    @Mock
+    private Model model;
+
+    @Mock
+    private BindingResult bindingResult;
+
+    @Mock
+    private RedirectAttributes redirectAttributes;
+
+    @InjectMocks
+    private MovieController movieController;
 
     @BeforeEach
     void setUp() {
-        movieDto = new MovieDto();
-        movieDto.setId(1L);
-        movieDto.setName("Test Movie");
-        movieDto.setCountry("Test Country");
-        movieDto.setWins(10);
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
-    void testGetIndexPage() throws Exception {
-        mockMvc.perform(get("/movie/index"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("index"));
+    void testGetIndexPage() {
+        // Arrange
+        when(movieService.listDto(anyInt(), anyString(), anyString(), anyString(), anyString())).thenReturn(Page.empty());
+
+        // Act
+        String viewName = movieController.getIndexPage(model, 1, "name", "asc", "", "");
+
+        // Assert
+        assertEquals("index", viewName);
+        verify(movieService, times(1)).listDto(anyInt(), anyString(), anyString(), anyString(), anyString());
+        verify(model, times(1)).addAttribute(eq("movies"), anyList());
+        verify(model, times(1)).addAttribute(eq("currentPage"), anyInt());
+        verify(model, times(1)).addAttribute(eq("totalElements"), anyLong());
+        verify(model, times(1)).addAttribute(eq("sortField"), anyString());
+        verify(model, times(1)).addAttribute(eq("sortDir"), anyString());
+        verify(model, times(1)).addAttribute(eq("filterField"), anyString());
+        verify(model, times(1)).addAttribute(eq("filterValue"), anyString());
     }
 
     @Test
-    void testCreateNewMovie() throws Exception {
-        mockMvc.perform(get("/movie/new"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("new"))
-                .andExpect(model().attributeExists("movieDto"));
+    void testCreateNewMovie() {
+        // Act
+        String viewName = movieController.createNewMovie(model);
+
+        // Assert
+        assertEquals("new", viewName);
+        verify(model, times(1)).addAttribute(eq("movieDto"), any(MovieDto.class));
     }
 
     @Test
-    void testSave() throws Exception {
+    void testSaveMovie() {
+        // Arrange
+        MovieDto movieDto = new MovieDto();
+        when(bindingResult.hasErrors()).thenReturn(false);
         when(movieService.save(any(MovieDto.class))).thenReturn(movieDto);
 
-        mockMvc.perform(post("/movie/")
-                        .flashAttr("movieDto", movieDto))
-                .andExpect(status().is3xxRedirection())
-                .andExpect(view().name("redirect:/movie/"));
+        // Act
+        String viewName = movieController.save(movieDto, bindingResult, redirectAttributes);
+
+        // Assert
+        assertEquals("redirect:/movie/", viewName);
+        verify(movieService, times(1)).save(any(MovieDto.class));
     }
 
     @Test
-    void testDelete() throws Exception {
-        mockMvc.perform(get("/movie/delete/1"))
-                .andExpect(status().is3xxRedirection())
-                .andExpect(view().name("redirect:/movie/"));
+    void testSaveMovieWithErrors() {
+        // Arrange
+        MovieDto movieDto = new MovieDto();
+        when(bindingResult.hasErrors()).thenReturn(true);
+
+        // Act
+        String viewName = movieController.save(movieDto, bindingResult, redirectAttributes);
+
+        // Assert
+        assertEquals("new", viewName);
+        verify(movieService, times(0)).save(any(MovieDto.class));
     }
 
     @Test
-    void testShowUpdateForm() throws Exception {
+    void testDeleteMovie() {
+        // Act
+        String viewName = movieController.delete(1L);
+
+        // Assert
+        assertEquals("redirect:/movie/", viewName);
+        verify(movieService, times(1)).deleteById(1L);
+    }
+
+    @Test
+    void testShowUpdateForm() {
+        // Arrange
+        MovieDto movieDto = new MovieDto();
         when(movieService.getDtoById(anyLong())).thenReturn(movieDto);
 
-        mockMvc.perform(get("/movie/update/1"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("update"))
-                .andExpect(model().attributeExists("movieDto"));
+        // Act
+        String viewName = movieController.showUpdateForm(1L, model);
+
+        // Assert
+        assertEquals("update", viewName);
+        verify(model, times(1)).addAttribute(eq("movieDto"), any(MovieDto.class));
     }
 
     @Test
-    void testUpdateMovie() throws Exception {
+    void testUpdateMovie() {
+        // Arrange
+        MovieDto movieDto = new MovieDto();
+        when(bindingResult.hasErrors()).thenReturn(false);
         when(movieService.save(any(MovieDto.class))).thenReturn(movieDto);
 
-        mockMvc.perform(post("/movie/update/1")
-                        .flashAttr("movieDto", movieDto))
-                .andExpect(status().is3xxRedirection())
-                .andExpect(view().name("redirect:/movie/"));
+        // Act
+        String viewName = movieController.updateMovie(1L, movieDto, bindingResult, model);
+
+        // Assert
+        assertEquals("redirect:/movie/", viewName);
+        verify(movieService, times(1)).save(any(MovieDto.class));
     }
 
     @Test
-    void testGetWebMovies() throws Exception {
-        when(movieService.getAllWebMovies(anyString())).thenReturn(List.of(movieDto));
+    void testUpdateMovieWithErrors() {
+        // Arrange
+        MovieDto movieDto = new MovieDto();
+        when(bindingResult.hasErrors()).thenReturn(true);
 
-        mockMvc.perform(get("/movie/filter/Test"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("index"))
-                .andExpect(model().attributeExists("movies"));
-    }}
+        // Act
+        String viewName = movieController.updateMovie(1L, movieDto, bindingResult, model);
+
+        // Assert
+        assertEquals("update", viewName);
+        verify(movieService, times(0)).save(any(MovieDto.class));
+    }
+}
