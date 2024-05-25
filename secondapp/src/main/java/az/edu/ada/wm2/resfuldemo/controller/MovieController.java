@@ -7,11 +7,15 @@ import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
@@ -23,6 +27,11 @@ public class MovieController {
     private static final Logger logger = LoggerFactory.getLogger(MovieController.class);
     @Autowired
     private MovieService movieService;
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    private final String BASE_URL = "http://localhost:8080/movies";
 
     @GetMapping("/index")
     public String getIndexPage(Model model,
@@ -41,7 +50,16 @@ public class MovieController {
                             @RequestParam(name = "sortDir", defaultValue = "asc") String sortDir,
                             @RequestParam(name = "filterField", defaultValue = "") String filterField,
                             @RequestParam(name = "filterValue", defaultValue = "") String filterValue) {
-        Page<MovieDto> moviesPage = movieService.listDto(pageNo, sortField, sortDir, filterField, filterValue);
+        // Construct the URL with the appropriate parameters
+        String url = BASE_URL + "?pageNo=" + pageNo + "&sortField=" + sortField + "&sortDir=" + sortDir +
+                "&filterField=" + filterField + "&filterValue=" + filterValue;
+
+        // Send GET request to the other application
+        ResponseEntity<Page<MovieDto>> responseEntity = restTemplate.exchange(url, HttpMethod.GET, null,
+                new ParameterizedTypeReference<Page<MovieDto>>() {});
+
+        Page<MovieDto> moviesPage = responseEntity.getBody();
+
         model.addAttribute("movies", moviesPage.getContent());
         model.addAttribute("currentPage", pageNo);
         model.addAttribute("totalElements", moviesPage.getTotalElements());
@@ -55,7 +73,10 @@ public class MovieController {
 
     @GetMapping("/new")
     public String createNewMovie(Model model) {
-        model.addAttribute("movieDto", new MovieDto());
+        // Send GET request to retrieve the new movie form from the other application
+        ResponseEntity<MovieDto> responseEntity = restTemplate.getForEntity(BASE_URL + "/new", MovieDto.class);
+        MovieDto movieDto = responseEntity.getBody();
+        model.addAttribute("movieDto", movieDto);
         return "new";
     }
 
@@ -67,7 +88,8 @@ public class MovieController {
             return "new";  // Redirect back to the form page with errors
         }
         try {
-            MovieDto savedMovie = movieService.save(movieDto);
+            // Send POST request to save the movie data in the other application
+            ResponseEntity<MovieDto> savedMovieResponse = restTemplate.postForEntity(BASE_URL, movieDto, MovieDto.class);
             return "redirect:/movie/";
         } catch (Exception e) {
             logger.error("Error saving movie: {}", movieDto.getName(), e);
@@ -78,7 +100,8 @@ public class MovieController {
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable Long id) {
         try {
-            movieService.deleteById(id);
+            // Send DELETE request to delete the movie with the specified ID in the other application
+            restTemplate.delete(BASE_URL + "/delete/" + id);
             return "redirect:/movie/";
         } catch (Exception e) {
             logger.error("Error deleting movie with ID: {}", id, e);
@@ -88,10 +111,9 @@ public class MovieController {
 
     @GetMapping("/update/{id}")
     public String showUpdateForm(@PathVariable Long id, Model model) {
-        MovieDto movieDto = movieService.getDtoById(id);
-        if (movieDto == null) {
-            return "redirect:/movie/";  // Redirect if no movie is found
-        }
+        // Send GET request to retrieve the movie data to be updated from the other application
+        ResponseEntity<MovieDto> responseEntity = restTemplate.getForEntity(BASE_URL + "/update/" + id, MovieDto.class);
+        MovieDto movieDto = responseEntity.getBody();
         model.addAttribute("movieDto", movieDto);
         return "update";
     }
@@ -103,14 +125,19 @@ public class MovieController {
             model.addAttribute("org.springframework.validation.BindingResult.movieDto", result);
             return "update";  // Return directly to the update view with the form data and errors
         }
-        movieService.save(movieDto);
+        // Send PUT request to update the movie data in the other application
+        restTemplate.put(BASE_URL + "/update/" + id, movieDto);
         return "redirect:/movie/";  // Redirect after successful update
     }
 
     @GetMapping("/filter/{keyword}")
     public String getWebMovies(Model model, @PathVariable String keyword) {
-        List<MovieDto> movies = movieService.getAllWebMovies(keyword);
+        // Send GET request to retrieve the filtered movies from the other application
+        ResponseEntity<List<MovieDto>> responseEntity = restTemplate.exchange(BASE_URL + "/filter/" + keyword, HttpMethod.GET, null,
+                new ParameterizedTypeReference<List<MovieDto>>() {});
+        List<MovieDto> movies = responseEntity.getBody();
         model.addAttribute("movies", movies);
         return "index";
     }
+
 }

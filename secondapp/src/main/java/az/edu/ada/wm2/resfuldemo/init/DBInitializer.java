@@ -1,7 +1,7 @@
 package az.edu.ada.wm2.resfuldemo.init;
 
-import az.edu.ada.wm2.resfuldemo.model.entity.Product;
-import az.edu.ada.wm2.resfuldemo.repo.ProductRepository;
+import az.edu.ada.wm2.resfuldemo.model.entity.Movie;
+import az.edu.ada.wm2.resfuldemo.repo.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -10,25 +10,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class DBInitializer {
 
-
     @Bean
     @Autowired
-    public CommandLineRunner init(ProductRepository productRepo) {
+    public CommandLineRunner init(MovieRepository movieRepo) {
         return (args) -> {
-            Product p1 = productRepo.save(new Product("test", "test 12345", 123.0));
-            Product p2 = productRepo.save(new Product("abc", "abc 12345", 234.0));
+            Movie m1 = movieRepo.save(new Movie("test", "test 12345", 123));
+            Movie m2 = movieRepo.save(new Movie("abc", "abc 12345", 234));
 
             Thread.sleep(1000 * 60);
 
-            productRepo.save(new Product("latest", "latest product created", 169.0));
+            movieRepo.save(new Movie("latest", "latest movie created", 169));
 
             Thread.sleep(1000 * 90);
 
-            p1.setPricePerItem(50.0);
-            p2.setPricePerItem(p2.getPricePerItem() * 2);
-
-            productRepo.save(p1);
-            productRepo.save(p2);
+            movieRepo.save(m1);
+            movieRepo.save(m2);
         };
     }
 
