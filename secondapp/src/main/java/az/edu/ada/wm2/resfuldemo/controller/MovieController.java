@@ -31,7 +31,7 @@ public class MovieController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String BASE_URL = "http://localhost:8080/movies";
+    private final String BASE_URL = "http://localhost:8080";
 
     @GetMapping("/index")
     public String getIndexPage(Model model,

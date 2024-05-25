@@ -24,11 +24,11 @@ spring:
 logging:
   file:
     path: C:\Users\nargi\OneDrive\Documents\web2\resfuldemo
-    name: file.log
+    name: secondappfile.log
   level:
     org:
       springframework:
         web: INFO
 
 server:
-  port: 9090
+  port: 8081

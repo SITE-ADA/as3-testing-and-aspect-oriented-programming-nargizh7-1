@@ -19,3 +19,24 @@
 2024-05-25T14:19:13.280+04:00  INFO 11368 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-25T14:19:13.288+04:00  INFO 11368 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-25T14:19:13.303+04:00  INFO 11368 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T15:48:45.468+04:00  INFO 13300 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Starting ResfulDemoApplicationTests using Java 17.0.10 with PID 13300 (started by nargi in C:\Users\nargi\OneDrive\Documents\web2\resfuldemo\secondapp)
+2024-05-25T15:48:45.476+04:00  INFO 13300 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T15:48:48.380+04:00  INFO 13300 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T15:48:49.597+04:00  INFO 13300 --- [ResfulDemo] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1173 ms. Found 1 JPA repository interface.
+2024-05-25T15:48:52.198+04:00  INFO 13300 --- [ResfulDemo] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T15:48:52.458+04:00  INFO 13300 --- [ResfulDemo] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-25T15:48:52.585+04:00  INFO 13300 --- [ResfulDemo] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T15:48:53.665+04:00  INFO 13300 --- [ResfulDemo] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T15:48:53.832+04:00  INFO 13300 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T15:48:54.671+04:00  INFO 13300 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:restDB user=SA
+2024-05-25T15:48:54.677+04:00  INFO 13300 --- [ResfulDemo] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T15:48:54.781+04:00  WARN 13300 --- [ResfulDemo] [Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 1.4.200 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-05-25T15:48:58.143+04:00  INFO 13300 --- [ResfulDemo] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T15:48:58.310+04:00  INFO 13300 --- [ResfulDemo] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T15:49:00.032+04:00  INFO 13300 --- [ResfulDemo] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-25T15:49:03.956+04:00  WARN 13300 --- [ResfulDemo] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T15:49:04.111+04:00  INFO 13300 --- [ResfulDemo] [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-25T15:49:06.015+04:00  INFO 13300 --- [ResfulDemo] [Test worker] a.e.a.w.r.ResfulDemoApplicationTests     : Started ResfulDemoApplicationTests in 21.079 seconds (process running for 22.96)
+2024-05-25T15:51:37.489+04:00  INFO 13300 --- [ResfulDemo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T15:51:37.503+04:00  INFO 13300 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T15:51:37.523+04:00  INFO 13300 --- [ResfulDemo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
