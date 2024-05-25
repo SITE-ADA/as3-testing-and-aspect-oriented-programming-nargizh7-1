@@ -32,7 +32,7 @@ This repository contains two Spring Boot applications: restfuldemo and secondapp
    Another application with similar features but adjusted MovieController is set to run on `localhost:8081`
 
 #### Video Link
-- **link**: `https://`
+- **link**: `https://youtu.be/Zx3_7ifCZ-M`
 
 #### Documentation
 The Javadoc documentation for this application is automatically generated during the build process using Gradle. To view the documentation:
